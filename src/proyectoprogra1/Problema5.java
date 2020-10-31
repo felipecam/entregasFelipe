@@ -27,7 +27,8 @@ public class Problema5 {
                 pi = pi - (4 / i);
                 j = j + 2; // por ello se hace uso de esta condicion, en la siguiente iteracion del ciclo j seria 4
             }
-        }
+        
+            
         System.out.println("El valor de pi es: " + pi);
-    }
+    } 
 }
