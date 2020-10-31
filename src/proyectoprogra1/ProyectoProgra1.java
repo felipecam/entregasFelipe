@@ -21,7 +21,7 @@ public class ProyectoProgra1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-
+       //test
         /*
  *PROBLEMA 1
          */
