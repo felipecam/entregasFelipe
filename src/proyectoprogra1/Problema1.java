@@ -21,9 +21,12 @@ public class Problema1 {
         /*
  *PROBLEMA 1
          */
+        
+        //variables
         int opcion;
         int numero1, numero2;
-
+        
+        //do while para elegir opcion del meny
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog("Digite la operacion que desea realizar: " + "\n"
                     + "1 para suma" + "\n"
@@ -35,7 +38,8 @@ public class Problema1 {
 
         numero1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del primer numero"));
         numero2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del segundo numero"));
-
+        
+        //dentro de cada impreseion se realiza la operacion correspondiente
         switch (opcion) {
             case 1:
                 JOptionPane.showMessageDialog(null, "El resultado de la suma es: " + (numero1 + numero2));
