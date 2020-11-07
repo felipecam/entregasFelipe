@@ -16,7 +16,7 @@ public class Problema6 {
     public static void main(String[] args) {
         boolean continuar = true;
         do {
-
+            
             int opcion;
             //do while para elegir opcion del meny
             do {
