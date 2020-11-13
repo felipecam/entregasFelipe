@@ -14,25 +14,25 @@ public class Compugramas {
     public static void main(String[] args) {
 
         int tam = 5;
-//        System.out.println("Compugrama 1:");
-//
-//        for (int i = 0; i <= tam; i++) {
-//            System.out.print(" - ");
-//            if (i == tam) {
-//                System.out.println(" >");
-//            }
-//        }
-//
-//        System.out.println("Compugrama 2: ");
-//        for (int i = 0; i < 3; i++) {
-//            for (int x = 0; x <= tam; x++) {
-//                System.out.print(" - ");
-//                if (x == tam) {
-//                    System.out.print(" >");
-//                }
-//            }
-//             System.out.println("");
-//        }
+        System.out.println("Compugrama 1:");
+
+        for (int i = 0; i <= tam; i++) {
+            System.out.print(" - ");
+            if (i == tam) {
+                System.out.println(" >");
+            }
+        }
+
+        System.out.println("Compugrama 2: ");
+        for (int i = 0; i < 3; i++) {
+            for (int x = 0; x <= tam; x++) {
+                System.out.print(" - ");
+                if (x == tam) {
+                    System.out.print(" >");
+                }
+            }
+             System.out.println("");
+        }
 
         System.out.println("Compugrama 3: ");
         for (int i = 0; i <= 5; i++) {
