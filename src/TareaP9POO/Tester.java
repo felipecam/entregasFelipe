@@ -17,9 +17,8 @@ public class Tester {
     static int[] notas = new int[tamArreglo];
     static int[] carne = new int[tamArreglo];
     static int posicion = 0;
-    static Estudiante e = new Estudiante();
     static Estudiante[] estudiante = new Estudiante[tamArreglo];
-    static Nota[] nota = new Nota[tamArreglo];
+
 
     public static void main(String[] args) {
 
