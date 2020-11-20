@@ -14,8 +14,6 @@ import javax.swing.JOptionPane;
 public class Tester {
 
     static int tamArreglo = 10;
-    static int[] notas = new int[tamArreglo];
-    static int[] carne = new int[tamArreglo];
     static int posicion = 0;
     static Estudiante[] estudiante = new Estudiante[tamArreglo];
 
@@ -88,7 +86,6 @@ public class Tester {
             nota = Integer.parseInt(JOptionPane.showInputDialog("Digite la nota del estudiante"));
             estudiante[posicion] = new Estudiante(carne, nombre, apellido, seccion, sexo, new Nota(nota));
 
-            //carne[posicion] = Integer.parseInt(JOptionPane.showInputDialog("Digite el carne del estudiante"));
             posicion++;
         } else {
             System.out.println("Ya no hay espacios disponibles");
@@ -97,7 +94,6 @@ public class Tester {
 
     public static void eliminarNota() {
         estudiante[posicion - 1] = new Estudiante();
-        carne[posicion - 1] = 0;
         posicion--;
     }
 
