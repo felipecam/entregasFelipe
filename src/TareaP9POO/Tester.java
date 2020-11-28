@@ -73,7 +73,7 @@ public class Tester {
         }
     }
 
-    public static void agregarNotaCarne() {
+    public static void agregarNotaCarne() { 
         int carne, nota;
         String nombre, apellido, seccion, sexo;
 
