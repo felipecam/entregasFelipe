@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Quiz1;
+package TareaAtributoMadre;
 
-import TareaAtributoMadre.Alumno;
 import java.util.Date;
 
 public class Examen {

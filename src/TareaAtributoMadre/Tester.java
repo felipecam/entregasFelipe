@@ -3,12 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Quiz1;
+package TareaAtributoMadre;
 
-import TareaAtributoMadre.PadreFamiliar;
-import TareaAtributoMadre.Alumno;
-import TareaAtributoMadre.SistemaNotas;
-import TareaAtributoMadre.Examen;
 import java.util.Scanner;
 
 public class Tester {

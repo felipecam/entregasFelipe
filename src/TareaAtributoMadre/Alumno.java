@@ -1,6 +1,4 @@
-package Quiz1;
-
-import TareaAtributoMadre.PadreFamiliar;
+package TareaAtributoMadre;
 
 public class Alumno {
 
