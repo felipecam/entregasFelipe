@@ -10,35 +10,29 @@ package Proyecto2.problema1;
  * @author fbriceno
  */
 public class Moneda {
-    
-    private String moneda;
-    private double valor;
 
-    public Moneda() {
-    }
-    
-    public Moneda(String moneda, double valor) {
-        this.moneda = moneda;
-        this.valor = valor;
+    String nombre;
+    float valorColon;
+
+    public Moneda(String nombre, float valorColon) {
+        this.nombre = nombre;
+        this.valorColon = valorColon;
     }
 
-    public String getMoneda() {
-        return moneda;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setMoneda(String moneda) {
-        this.moneda = moneda;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public double getValor() {
-        return valor;
+    public float getValorColon() {
+        return valorColon;
     }
 
-    public void setValor(float valor) {
-        this.valor = valor;
+    public void setValorColon(float valorColon) {
+        this.valorColon = valorColon;
     }
-    
-    
-    
-    
+
 }
