@@ -6,6 +6,7 @@
 package TareaAtributoMadre;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Tester {
 
@@ -73,9 +74,13 @@ public class Tester {
             sistema.agregarEx(e);
             alum.mostrardatos();
             alum.mostrardatosFamiliar();
-            alum.mostrardatosMadre();
             sistema.mostrarExamenes();
-
+            
+            System.out.println("Seguir agregando si/no");
+            String continuar = s.next();
+            if(continuar.equalsIgnoreCase("no")){
+                break; // Agregue un break en un ciclo o una estructura break/continue (1pto).
+            }    
         }
 
     }
