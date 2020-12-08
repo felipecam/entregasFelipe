@@ -5,6 +5,8 @@
  */
 package Proyecto2.problema1;
 
+import Proyecto2.problema2.MaqConvertidora;
+import Proyecto2.problema2.Moneda;
 import java.util.Scanner;
 
 /**
