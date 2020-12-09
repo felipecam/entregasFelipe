@@ -5,8 +5,6 @@
  */
 package Proyecto2.problema1;
 
-import Proyecto2.problema2.MaqConvertidora;
-import Proyecto2.problema2.Moneda;
 import java.util.Scanner;
 
 /**
@@ -46,6 +44,7 @@ public class Tester {
 
             if (numMonedaOrigen == 1) {//Colon
                 if (numMonedaSalida == 1) {//Colon
+                
                     System.out.println("El valor equivalente es: " + maq.convertir(mColon, mColon, cantidad) + " Colones");
                 } else if (numMonedaSalida == 2) { //Dolar
                     System.out.println("El valor equivalente es: " + maq.convertir(mColon, mDolar, cantidad) + " Dolares ");

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Proyecto2.problema2;
+package Proyecto2.problema1.Problema2;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -33,13 +33,13 @@ public class Tester {
 
         while (true) {
             //ingresar valores durante la ejecucion del programana 
-            System.out.println("Digite el nombre de la meneda");
+            System.out.println("Digite el nombre de la meneda ");
             monedaM2 = s.next();
-            System.out.println("Digite el valor de la meneda");
+            System.out.println("Digite el valor de la meneda respecto al colon");
             valorM2 = s.nextFloat();
             System.out.println("Digite el nombre de la otra meneda");
             monedaM3 = s.next();
-            System.out.println("Digite el valor de la otra meneda");
+            System.out.println("Digite el valor de la otra meneda respecto al colon");
             valorM3 = s.nextFloat();
             //asignar valor digitado por el usuario a los objetos
             m2.setNombre(monedaM2);
@@ -64,27 +64,27 @@ public class Tester {
 
             if (numMonedaOrigen == 1) {//Colon
                 if (numMonedaSalida == 1) {//Colon
-                    System.out.println("El valor equivalente es: " + maq.convertir(mColon, mColon, cantidad) + " Colones");
+                    System.out.println("El valor equivalente es: " + maq.convertir(mColon, mColon, cantidad, monedaM2, monedaM3) + " Colones");
                 } else if (numMonedaSalida == 2) { //m2
-                    System.out.println("El valor equivalente es: " + maq.convertir(mColon, m2, cantidad) + m2.getNombre());
+                    System.out.println("El valor equivalente es: " + maq.convertir(mColon, m2, cantidad, monedaM2, monedaM3) + m2.getNombre());
                 } else { //m3
-                    System.out.println("El valor equivalente es: " + maq.convertir(mColon, m3, cantidad) + m3.getNombre());
+                    System.out.println("El valor equivalente es: " + maq.convertir(mColon, m3, cantidad, monedaM2, monedaM3) + m3.getNombre());
                 }
             } else if (numMonedaOrigen == 2) {//m2
                 if (numMonedaSalida == 1) {//Colon
-                    System.out.println("El valor equivalente es: " + maq.convertir(m2, mColon, cantidad) + " Colones");
+                    System.out.println("El valor equivalente es: " + maq.convertir(m2, mColon, cantidad, monedaM2, monedaM3) + " Colones");
                 } else if (numMonedaSalida == 2) { //m2
-                    System.out.println("El valor equivalente es: " + maq.convertir(m2, m2, cantidad) +  m2.getNombre());
+                    System.out.println("El valor equivalente es: " + maq.convertir(m2, m2, cantidad, monedaM2, monedaM3) +  m2.getNombre());
                 } else { //m3
-                    System.out.println("El valor equivalente es: " + maq.convertir(m2, m3, cantidad)+ m3.getNombre());
+                    System.out.println("El valor equivalente es: " + maq.convertir(m2, m3, cantidad, monedaM2, monedaM3)+ m3.getNombre());
                 }
             } else if (numMonedaOrigen == 3) {//m3
                 if (numMonedaSalida == 1) {//Colon
-                    System.out.println("El valor equivalente es: " + maq.convertir(m3, mColon, cantidad) + " Colones");
+                    System.out.println("El valor equivalente es: " + maq.convertir(m3, mColon, cantidad, monedaM2, monedaM3) + " Colones");
                 } else if (numMonedaSalida == 2) { //m2
-                    System.out.println("El valor equivalente es: " + maq.convertir(m3, m2, cantidad) +  m2.getNombre());
+                    System.out.println("El valor equivalente es: " + maq.convertir(m3, m2, cantidad, monedaM2, monedaM3) +  m2.getNombre());
                 } else { //m3
-                    System.out.println("El valor equivalente es: " + maq.convertir(m3, m3, cantidad) + m3.getNombre());
+                    System.out.println("El valor equivalente es: " + maq.convertir(m3, m3, cantidad, monedaM2, monedaM3) + m3.getNombre());
                 }
             }
 
