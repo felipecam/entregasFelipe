@@ -14,48 +14,52 @@ import java.util.Scanner;
  */
 public class Main {
 
+    static Scanner s = new Scanner(System.in);
+    static int cant = 3;
+    static int[] vecto1 = new int[cant];
+    static int[] vecto2 = new int[cant];
+
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);
-        int cant = 2;
-        int[] vecto1 = new int[cant];
-        int[] vecto2 = new int[cant];
-
-        for (int i = 0; i < cant; i++) {
-            System.out.println("Primer vector, Ingrese un numero entero");
-            vecto1[i] = s.nextInt();
-        }
-
-        for (int i = 0; i < cant; i++) {
-            System.out.println("Segundo vector, Ingrese un numero entero");
-            vecto2[i] = s.nextInt();
-        }
+        llenarArreglo1();
+        llenarArreglo2();
 
         Arrays.sort(vecto1);
         Arrays.sort(vecto2);
 
-        System.out.println("-------------------------------------");
-        System.out.println(Arrays.toString(ordenarArreglo(vecto1, vecto2, cant)));
+        System.out.println("Vector final: " + "\n"  + Arrays.toString(ordenarArreglo(vecto1, vecto2, (cant + cant))));
+    }
+
+    public static void llenarArreglo1() {
+        for (int i = 0; i < cant; i++) {
+            System.out.println("Primer vector, Ingrese un numero entero");
+            vecto1[i] = s.nextInt();
+        }
+    }
+
+    public static void llenarArreglo2() {
+        for (int i = 0; i < cant; i++) {
+            System.out.println("Segundo vector, Ingrese un numero entero");
+            vecto2[i] = s.nextInt();
+        }
     }
 
     public static int[] ordenarArreglo(int[] vector1, int[] vector2, int cant) {
         int valor = 0;
-        int[] vectorFinal = new int[cant + cant];
+        int[] vectorFinal = new int[cant];
+        int i = 0;
         int pos = 0;
 
-//        for(int i=0; i<=vectorFinal.length; i++){
-//            
-//            if
-//        }
-        for (int x : vector1) //copying elements of secondArray using for-each loop  
+        for (int x : vectorFinal) //ciclo for each:
         {
-            vectorFinal[pos] = x;
-            pos++;              //increases position by 1  
-        }
-        for (int x : vector2) //copying elements of firstArray using for-each loop  
-        {
-            vectorFinal[pos] = x;
-            pos++;
+            if (i % 2 == 0) {
+                vectorFinal[i] = vector1[pos];
+                i++;
+            } else {
+                vectorFinal[i] = vector2[pos];
+                i++;
+                pos++;
+            }
         }
 
         return vectorFinal;
