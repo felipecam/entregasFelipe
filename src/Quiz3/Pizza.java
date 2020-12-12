@@ -11,14 +11,12 @@ package Quiz3;
  */
 public class Pizza {
 
-    String tamaño;
     Ingrediente i1;
     Ingrediente i2;
     Ingrediente i3;
     Ingrediente i4;
 
-    public Pizza(String tamaño, Ingrediente i1, Ingrediente i2, Ingrediente i3, Ingrediente i4) { //4 ingredientes
-        this.tamaño = tamaño;
+    public Pizza(Ingrediente i1, Ingrediente i2, Ingrediente i3, Ingrediente i4) { //4 ingredientes
         this.i1 = i1;
         this.i2 = i2;
         this.i3 = i3;
@@ -26,13 +24,11 @@ public class Pizza {
     }
 
     public Pizza(String tamaño, Ingrediente i1, Ingrediente i2) { //2 ingrediente 
-        this.tamaño = tamaño;
         this.i1 = i1;
         this.i2 = i2;
     }
 
     public Pizza(String tamaño, Ingrediente i1, Ingrediente i2, Ingrediente i3) { //3 ingredientes
-        this.tamaño = tamaño;
         this.i1 = i1;
         this.i2 = i2;
         this.i3 = i3;
@@ -49,13 +45,6 @@ public class Pizza {
         return precio;   
     }
 
-    public String getTamaño() {
-        return tamaño;
-    }
-
-    public void setTamaño(String tamaño) {
-        this.tamaño = tamaño;
-    }
 
     public Ingrediente getI1() {
         return i1;
