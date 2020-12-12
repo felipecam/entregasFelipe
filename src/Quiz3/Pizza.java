@@ -23,12 +23,12 @@ public class Pizza {
         this.i4 = i4;
     }
 
-    public Pizza(String tamaño, Ingrediente i1, Ingrediente i2) { //2 ingrediente 
+    public Pizza( Ingrediente i1, Ingrediente i2) { //2 ingrediente 
         this.i1 = i1;
         this.i2 = i2;
     }
 
-    public Pizza(String tamaño, Ingrediente i1, Ingrediente i2, Ingrediente i3) { //3 ingredientes
+    public Pizza(Ingrediente i1, Ingrediente i2, Ingrediente i3) { //3 ingredientes
         this.i1 = i1;
         this.i2 = i2;
         this.i3 = i3;
