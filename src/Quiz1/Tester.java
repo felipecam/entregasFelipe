@@ -5,10 +5,10 @@
  */
 package Quiz1;
 
-import TareaAtributoMadre.PadreFamiliar;
-import TareaAtributoMadre.Alumno;
-import TareaAtributoMadre.SistemaNotas;
-import TareaAtributoMadre.Examen;
+import Proyecto2.Problema6.PadreFamiliar;
+import Proyecto2.Problema6.Alumno;
+import Proyecto2.Problema6.SistemaNotas;
+import Proyecto2.Problema6.Examen;
 import java.util.Scanner;
 
 public class Tester {

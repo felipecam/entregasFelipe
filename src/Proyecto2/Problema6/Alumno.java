@@ -1,6 +1,4 @@
-package Quiz1;
-
-import Proyecto2.Problema6.PadreFamiliar;
+package Proyecto2.Problema6;
 
 public class Alumno {
 
@@ -32,8 +30,12 @@ public class Alumno {
         this.carne = carne;
         this.familia = familia;
         this.madre = madre;
-    } 
-    
+    }
+
+    //1 Agregue una sobrecarga en un contructor (1pto).
+    public Alumno(String nombre) {
+        this.nombre = "Felipe";
+    }
 
     public void mostrardatos() {
         System.out.println("Datos del alumno ingresado:" + "\n" + nombre + " " + apellido + " " + carne);
@@ -41,11 +43,13 @@ public class Alumno {
 
     public void mostrardatosFamiliar() {
         System.out.println("Datos del padre ingresado:" + "\n" + "Nombre: " + familia.getNombre() + ",apellido:  " + familia.getApellido() + ", cedula:  " + familia.getCedula() + ""
-                + ", telefono: " + familia.getTelefono());
+                + ", telefono: " + familia.getTelefono() + "\n"
+                + "Datos de la madre ingresada:" + "\n" + "Nombre: " + madre.getNombre() + ",apellido:  " + madre.getApellido() + ", cedula:  " + madre.getCedula() + ""
+                + ", telefono: " + madre.getTelefono());
     }
 
     public void mostrardatosMadre() {
-        System.out.println("Datos de la madre ingresado:" + "\n" + "Nombre: " + madre.getNombre() + ",apellido:  " + madre.getApellido() + ", cedula:  " + madre.getCedula() + ""
+        System.out.println("Datos de la madre ingresada:" + "\n" + "Nombre: " + madre.getNombre() + ",apellido:  " + madre.getApellido() + ", cedula:  " + madre.getCedula() + ""
                 + ", telefono: " + madre.getTelefono());
     }
 

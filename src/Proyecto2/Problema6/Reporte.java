@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Reporte {
 
-    boolean modoGUI = true;
+    boolean modoGUI = false;
 
     public void imprimirReporte() {
 

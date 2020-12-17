@@ -5,6 +5,10 @@
  */
 package TareaAtributoMadre;
 
+//import Proyecto2.Problema6.Alumno;
+//import Proyecto2.Problema6.SistemaNotas;
+//import Proyecto2.Problema6.Examen;
+//import Proyecto2.Problema6.PadreFamiliar;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 

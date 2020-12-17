@@ -5,6 +5,7 @@
  */
 package TareaAtributoMadre;
 
+
 public class SistemaNotas {
     int maxRegistros=100;
     Examen[] examenes = new Examen[maxRegistros];
