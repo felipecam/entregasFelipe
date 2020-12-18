@@ -49,6 +49,7 @@ public class SistemaNotasInterfaz {
             puntosTotales = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los puntos totales"));
             puntosObtenidos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los puntos obtenidos"));
         }
+        
     }
 
     public void mostrarExamenes() {
