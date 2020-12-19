@@ -9,13 +9,19 @@ package Examen2Progra1;
  *
  * @author fbriceno
  */
-public class Tester {
+public class Reloj {
 
-    public static void main(String[] args) {
-//     EquipoSonidoControlador controlador = new EquipoSonidoControlador();
-//     controlador.iniciar();
+    public void setAlarm(int horas, int minutos) {
 
+    }
 
+    public int getHora() {
+        return 7;
+    }
+
+    public int getmin() {
+
+        return 30;
     }
 
 }

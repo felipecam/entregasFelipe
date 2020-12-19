@@ -9,13 +9,6 @@ package Examen2Progra1;
  *
  * @author fbriceno
  */
-public class Tester {
-
-    public static void main(String[] args) {
-//     EquipoSonidoControlador controlador = new EquipoSonidoControlador();
-//     controlador.iniciar();
-
-
-    }
-
+public class Controlador {
+    
 }
