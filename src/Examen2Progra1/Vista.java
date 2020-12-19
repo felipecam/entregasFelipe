@@ -17,17 +17,17 @@ public class Vista {
     Parlante p1, p2, p3;
     Radio r;
 
-    public Vista(Radio r) {
+    public Vista(EquipoSonido e, Radio r) {
+        this.e = e;
         this.r = r;
     }
-    
     
 
     public int opcionMenuPrincipal() {
         int o = 0;
         try {
             o = Integer.parseInt(JOptionPane.showInputDialog("1. Reproducir lista reproduccion \n2. Reproducir radio\n3.Configurar el nivel de volumen parlantes"
-                    + "\n4.Des/habilitar parlantes\n5.Eliminar audio\n6.Salir."));
+                    + "\n4.Des/habilitar parlantes\n5.hora Inicio automatico\n6.Salir."));
             if ((o < 1) || (o > 6)) {
                 throw new Exception("# de opcion  es inválido");
             }
@@ -92,7 +92,7 @@ public class Vista {
     //parlante
     public int seleccionarParlante() {
         int op = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el parlante que desea subir o bajar volumen\n1.derecho\n2. izquierdo"
-                + "\nSubwoofer"));
+                + "\n3.Subwoofer"));
         return op;
     }
 
@@ -115,11 +115,25 @@ public class Vista {
     public void cancionParlante(Parlante p) {
         JOptionPane.showMessageDialog(null, "cancion: " +  p.sonar(EquipoSonido.listaAudios[0]));
     }
+    
+    public int parlanteEncApag() {
+        int vol = 0;
+        do {
+            vol = Integer.parseInt(JOptionPane.showInputDialog(null, "1. encender\n2.apagar"));
+        } while (vol <= 0 || vol >= 3);
+        return vol;
+    }
+    
 
     //radio
     public void seleccionarRadio() {
         r.setStado(true);
         JOptionPane.showMessageDialog(null, "sonando radio,cancion:  " + r.getAudio());
+    }
+    
+    //hora
+    public void hora(){
+        JOptionPane.showMessageDialog(null, e.asignarHora());
     }
 
 }

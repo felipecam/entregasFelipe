@@ -16,7 +16,8 @@ public class EquipoSonido {
     static int posicion = 0;
     Reloj reloj;
 
-    public EquipoSonido() {
+    public EquipoSonido(Reloj reloj) {
+        this.reloj = reloj;
     }
 
     public static void llenarArreglo() {
