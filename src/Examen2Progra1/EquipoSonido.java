@@ -14,6 +14,7 @@ public class EquipoSonido {
     static int maxRegistros = 100;
     static String[] listaAudios = new String[maxRegistros];
     static int posicion = 0;
+    Reloj reloj;
 
     public EquipoSonido() {
     }
@@ -39,6 +40,20 @@ public class EquipoSonido {
             listaAudios[pos] = ""; //imprime el audio en posición i
         }
     }
+    
+    public String asignarHora(){
+    
+        return "hora: " + this.reloj.getHora() + ",  minutos: " + this.reloj.getmin();
+    }
+
+    public Reloj getReloj() {
+        return reloj;
+    }
+
+    public void setReloj(Reloj reloj) {
+        this.reloj = reloj;
+    }
+    
     
 
 }
