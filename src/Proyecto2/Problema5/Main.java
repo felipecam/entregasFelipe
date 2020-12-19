@@ -26,6 +26,7 @@ public class Main {
 
         Arrays.sort(vecto1);
         Arrays.sort(vecto2);
+        
 
         System.out.println("Vector final: " + "\n"  + Arrays.toString(ordenarArreglo(vecto1, vecto2, (cant + cant))));
     }

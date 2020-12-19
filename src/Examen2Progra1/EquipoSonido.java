@@ -9,13 +9,13 @@ package Examen2Progra1;
  *
  * @author fbriceno
  */
-public class Equipo {
+public class EquipoSonido {
 
     static int maxRegistros = 100;
     static String[] listaAudios = new String[maxRegistros];
     static int posicion = 0;
 
-    public Equipo() {
+    public EquipoSonido() {
     }
 
     public static void llenarArreglo() {
@@ -30,8 +30,15 @@ public class Equipo {
     }
 
     public static void agregarAudioLista(String audio) {
-        listaAudios[posicion]=audio;
+        listaAudios[posicion] = audio;
         posicion++;
     }
+
+    public static void eliminarAudioArreglo(int pos) {
+        if (listaAudios[pos].equals("") == false) { //Si no está vacío el audio en posición i
+            listaAudios[pos] = ""; //imprime el audio en posición i
+        }
+    }
+    
 
 }

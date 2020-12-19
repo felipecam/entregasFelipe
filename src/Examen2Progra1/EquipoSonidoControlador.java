@@ -12,19 +12,23 @@ package Examen2Progra1;
 public class EquipoSonidoControlador {
 
     public void iniciar() {
-        Equipo e = new Equipo();
+        int cancionActual = 0;
+        EquipoSonido e = new EquipoSonido();
         Vista v = new Vista();
-        Parlante pDerecho = new Parlante();
-        Parlante pIzquierdo = new Parlante();
-        Parlante pSubwoofer = new Parlante();
+        Parlante pDerecho = new Parlante("Derecho", 10, true);
+        Parlante pIzquierdo = new Parlante("Izquierdo", 10, true);
+        Parlante pSubwoofer = new Parlante("Subwoofer", 10, true);
         Radio rad = new Radio();
         Reloj r = new Reloj();
-        
-        Equipo.llenarArreglo();
-        for (int i = 0; i < 4; i++) {
+
+        EquipoSonido.llenarArreglo();
+        for (int i = 0; i < 3; i++) {
             String audioAgregado = v.agregarAudio();
-            Equipo.agregarAudioLista(audioAgregado);
+            EquipoSonido.agregarAudioLista(audioAgregado);
         }
+        v.imprimirListaCompleta();
+        pDerecho.sonar(EquipoSonido.listaAudios[cancionActual]);
+        EquipoSonido.eliminarAudioArreglo(cancionActual);
         v.imprimirListaCompleta();
 
     }
