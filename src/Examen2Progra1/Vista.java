@@ -12,10 +12,8 @@ import javax.swing.JOptionPane;
  * @author fbriceno
  */
 public class Vista {
-    
-    
-    
-    
+
+    Equipo e = new Equipo();
 
     public int getOpcionLista() {
         int o = 0;
@@ -31,4 +29,18 @@ public class Vista {
         return o;
     }
 
+    public String agregarAudio() {
+        String audio = JOptionPane.showInputDialog("Ingrese el audio a la lista");
+        return audio;
+    }
+
+    public void imprimirListaCompleta() {
+        
+        System.out.println("Lista de audios: ");
+        for (int i = 0; i < 100; i++) { //para cada espacio del arreglo
+            if (Equipo.listaAudios[i].equals("") == false) { //Si no está vacío el audio en posición i
+                System.out.println(Equipo.listaAudios[i]); //imprime el audio en posición i
+            }
+        }
+    }
 }

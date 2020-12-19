@@ -12,10 +12,8 @@ package Examen2Progra1;
 public class Tester {
 
     public static void main(String[] args) {
-//     EquipoSonidoControlador controlador = new EquipoSonidoControlador();
-//     controlador.iniciar();
-
+        EquipoSonidoControlador controlador = new EquipoSonidoControlador();
+        controlador.iniciar();
 
     }
-
 }
