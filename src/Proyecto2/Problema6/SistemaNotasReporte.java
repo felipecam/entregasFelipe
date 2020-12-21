@@ -11,19 +11,23 @@ import javax.swing.JOptionPane;
  *
  * @author fbriceno
  */
-public class Reporte {
+public class SistemaNotasReporte {
 
     boolean modoGUI = false;
 
-    public void imprimirReporte() {
-
-        String mensaje = "Mensaje prueba";
-        if (modoGUI) {
-            JOptionPane.showMessageDialog(null, mensaje);
-        } else {
-            System.out.println(mensaje);
-        }
+    public void generarReporteTodosExamenes() {
 
     }
 
+    public void generarReporteTodosAlumnos() {
+
+    }
+
+    public void generarReporteAlumnosConNotaInferiorA(int nota) {
+
+    }
+
+    public void generarReporteTodosExamenesOrdenadosPor(String propiedad) {
+
+    }
 }

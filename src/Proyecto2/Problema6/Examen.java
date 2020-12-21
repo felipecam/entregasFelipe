@@ -42,7 +42,7 @@ public class Examen {
 
     @Override
     public String toString() {
-        return "Examen{" + "nota=" + nota + ", nombreMateria=" + nombreMateria + ", puntosTotal=" + puntosTotal + ", puntosObtenidos=" + puntosObtenidos + ", fecha=" + fecha + '}';
+        return "Examen: " + "nota=" + nota + ", nombreMateria=" + nombreMateria + ", puntosTotal=" + puntosTotal + ", puntosObtenidos=" + puntosObtenidos ;
     }
 
     public int getNota() {

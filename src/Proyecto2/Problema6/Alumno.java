@@ -32,6 +32,12 @@ public class Alumno {
         this.madre = madre;
     }
 
+    public Alumno(PadreFamiliar familia) {
+        this.familia = familia;
+    }
+    
+    
+
     //1 Agregue una sobrecarga en un contructor (1pto).
     public Alumno(String nombre) {
         this.nombre = "Felipe";

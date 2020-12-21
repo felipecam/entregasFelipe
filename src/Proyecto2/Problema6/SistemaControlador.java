@@ -15,16 +15,17 @@ public class SistemaControlador {
 
         SistemaNotas sistema = new SistemaNotas();
         PadreFamiliar p = new PadreFamiliar();
-        Alumno a = new Alumno();
+        Alumno a = new Alumno(p);
         Examen e = new Examen();
-        SistemaNotasInterfaz si = new SistemaNotasInterfaz(true, sistema, a, p);
-        
+        SistemaNotasInterfaz si = new SistemaNotasInterfaz(true, sistema, a, p, e);
+
         si.AsignarDatosAlumnos();
         si.AsignarDatosFamilia();
         si.mostrarInformacionAlumno();
         si.mostrarInfromacionFamilia();
-        si.AgregarExamen();
-        
+        si.AgregarNotas();
+        sistema.agregarEx(e);
+        si.mostrarExamenes();
 
     }
 

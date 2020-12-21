@@ -6,9 +6,9 @@
 package Proyecto2.Problema6;
 
 public class SistemaNotas {
-    int maxRegistros=100;
-    Examen[] examenes = new Examen[maxRegistros];
-    int cont=0;
+    static int maxRegistros=100;
+    static Examen[] examenes = new Examen[maxRegistros];
+    static int cont=0; 
     
     public SistemaNotas(){
     }
@@ -35,13 +35,6 @@ public class SistemaNotas {
         return resultado;
     }
     
-    //mostrar examenes
-    public void mostrarExamenes(){
-        for(int i=0;i<cont;i++){
-            if(examenes[i]!=null)
-                System.out.println(examenes[i].toString());
-        }
-    }
     
     //calcular promedio
     public float promedioNotas(){

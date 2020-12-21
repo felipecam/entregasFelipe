@@ -18,6 +18,7 @@ public class SistemaNotasInterfaz {
     SistemaNotas sistema;
     Alumno a;
     PadreFamiliar p;
+    Examen e;
 
     Scanner s = new Scanner(System.in);
 
@@ -25,15 +26,16 @@ public class SistemaNotasInterfaz {
         
     }
 
-    public SistemaNotasInterfaz(boolean modoGUI, SistemaNotas sistema, Alumno a, PadreFamiliar p) {
+    public SistemaNotasInterfaz(boolean modoGUI, SistemaNotas sistema, Alumno a, PadreFamiliar p, Examen e) {
         this.modoGUI = modoGUI;
         this.sistema = sistema;
         this.a = a;
         this.p = p;
+        this.e = e;
     }
 
     //interfaz examen
-    public void AgregarExamen() {
+    public void AgregarNotas() {
 
         int nota, puntosTotales, puntosObtenidos;
 
@@ -50,12 +52,16 @@ public class SistemaNotasInterfaz {
             puntosObtenidos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los puntos obtenidos"));
         }
         
+        e.setAlumno(a);
+        e.setPuntosTotal(puntosTotales);
+        e.setNota(nota);
+        e.setPuntosObtenidos(puntosObtenidos);
     }
 
     public void mostrarExamenes() {
-        for (int i = 0; i < sistema.cont; i++) {
-            if (sistema.examenes[i] != null) {
-                System.out.println(sistema.examenes[i].toString());
+        for (int i = 0; i < SistemaNotas.cont; i++) {
+            if (SistemaNotas.examenes[i] != null) {
+                System.out.println(SistemaNotas.examenes[i].toString());
             }
         }
     }
@@ -63,9 +69,9 @@ public class SistemaNotasInterfaz {
     //interfaz alumno
     public void mostrarInformacionAlumno() {
         if (modoGUI) {  //mostrar datos consola
-            System.out.println("Datos del alumno ingresado:" + "\n" + a.getNombre() + " " + a.getApellido() + " " + a.getCarne());
+            System.out.println("Datos del alumno ingresado:" + "\n" + a.getNombre() + ", " + a.getApellido() + ", " + a.getCarne());
         } else {  //mostrar datos joptionPane
-            JOptionPane.showMessageDialog(null, "Datos del alumno ingresado:" + "\n" + a.getNombre() + " " + a.getApellido() + " " + a.getCarne());
+            JOptionPane.showMessageDialog(null, "Datos del alumno ingresado:" + "\n" + a.getNombre() + ", " + a.getApellido() + ", " + a.getCarne());
         }
     }
 
@@ -120,11 +126,16 @@ public class SistemaNotasInterfaz {
             cedula = Integer.parseInt(JOptionPane.showInputDialog("Digite el carne:"));
             numeroTel = JOptionPane.showInputDialog("Digite el nombre del alumno:");
         }
-
-        p.setNombre(nombreFamiliar);
-        p.setApellido(ApellidoFamiliar);
-        p.setCedula(cedula);
-        p.setTelefono(numeroTel);
+//
+//        p.setNombre(nombreFamiliar);
+//        p.setApellido(ApellidoFamiliar);
+//        p.setCedula(cedula);
+//        p.setTelefono(numeroTel);
+        
+        a.getFamilia().setNombre(nombreFamiliar);
+        a.getFamilia().setApellido(ApellidoFamiliar);
+        a.getFamilia().setCedula(cedula);
+        a.getFamilia().setTelefono(numeroTel);
     }
 
 }
