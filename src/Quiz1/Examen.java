@@ -5,7 +5,6 @@
  */
 package Quiz1;
 
-import Proyecto2.Problema6.Alumno;
 import java.util.Date;
 
 public class Examen {

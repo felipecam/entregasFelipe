@@ -1,6 +1,6 @@
 package Quiz1;
 
-import Proyecto2.Problema6.PadreFamiliar;
+
 
 public class Alumno {
 

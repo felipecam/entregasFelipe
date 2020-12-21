@@ -22,7 +22,7 @@ public class JPanelDibujo extends JPanel {
     public void paint(Graphics g) {
         super.paint(g);
 
-        int cant = (int) (Math.random() * 3 + 1);
+        int cant = (int) (Math.random() * 2 + 1);
         //RECTANGULOS
         for (int i = 0; i <= cant; i++) {
             int x = (int) (Math.random() * 600 + 1);

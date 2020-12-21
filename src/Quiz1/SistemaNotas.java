@@ -5,7 +5,6 @@
  */
 package Quiz1;
 
-import Proyecto2.Problema6.Examen;
 
 public class SistemaNotas {
     int maxRegistros=100;
