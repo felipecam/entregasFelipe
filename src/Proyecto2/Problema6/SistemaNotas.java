@@ -6,40 +6,40 @@
 package Proyecto2.Problema6;
 
 public class SistemaNotas {
-    static int maxRegistros=100;
+
+    static int maxRegistros = 100;
     static Examen[] examenes = new Examen[maxRegistros];
-    static int cont=0; 
-    
-    public SistemaNotas(){
+    static int cont = 0;
+
+    public SistemaNotas() {
     }
-    
+
     //elimina el ult examen del arreglo
-    public boolean eliminarEx(){
-        boolean resultado=false;
-        if(cont!=0){
-            examenes[cont-1]=null;
+    public boolean eliminarEx() {
+        boolean resultado = false;
+        if (cont != 0) {
+            examenes[cont - 1] = null;
             cont--;
-            resultado=true;
+            resultado = true;
         }
         return resultado;
     }
-    
+
     //agregar un examen al arreglo
-    public boolean agregarEx(Examen ex){
-        boolean resultado=false;
-        if(cont<maxRegistros){ //el arreglo tiene espacio
-            examenes[cont]=ex;
+    public boolean agregarEx(Examen ex) {
+        boolean resultado = false;
+        if (cont < maxRegistros) { //el arreglo tiene espacio
+            examenes[cont] = ex;
             cont++;
-            resultado=true;
+            resultado = true;
         }
         return resultado;
     }
-    
-    
+
     //calcular promedio
-    public float promedioNotas(){
-        float retorno=0f;
-        
+    public float promedioNotas() {
+        float retorno = 0f;
+
         return retorno;
     }
 }

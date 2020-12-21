@@ -23,7 +23,7 @@ public class SistemaNotasInterfaz {
     Scanner s = new Scanner(System.in);
 
     public SistemaNotasInterfaz() {
-        
+
     }
 
     public SistemaNotasInterfaz(boolean modoGUI, SistemaNotas sistema, Alumno a, PadreFamiliar p, Examen e) {
@@ -51,7 +51,7 @@ public class SistemaNotasInterfaz {
             puntosTotales = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los puntos totales"));
             puntosObtenidos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los puntos obtenidos"));
         }
-        
+
         e.setAlumno(a);
         e.setPuntosTotal(puntosTotales);
         e.setNota(nota);
@@ -59,11 +59,17 @@ public class SistemaNotasInterfaz {
     }
 
     public void mostrarExamenes() {
+
         for (int i = 0; i < SistemaNotas.cont; i++) {
             if (SistemaNotas.examenes[i] != null) {
-                System.out.println(SistemaNotas.examenes[i].toString());
+                if (modoGUI) { //mostrar datos consola
+                    System.out.println(SistemaNotas.examenes[i].toString());
+                } else {
+                    JOptionPane.showMessageDialog(null, SistemaNotas.examenes[i].toString());
+                }
             }
         }
+
     }
 
     //interfaz alumno
@@ -126,16 +132,23 @@ public class SistemaNotasInterfaz {
             cedula = Integer.parseInt(JOptionPane.showInputDialog("Digite el carne:"));
             numeroTel = JOptionPane.showInputDialog("Digite el nombre del alumno:");
         }
-//
-//        p.setNombre(nombreFamiliar);
-//        p.setApellido(ApellidoFamiliar);
-//        p.setCedula(cedula);
-//        p.setTelefono(numeroTel);
-        
+
         a.getFamilia().setNombre(nombreFamiliar);
         a.getFamilia().setApellido(ApellidoFamiliar);
         a.getFamilia().setCedula(cedula);
         a.getFamilia().setTelefono(numeroTel);
+    }
+
+    public String continuar() {
+        String continuar;
+        if (modoGUI) { //mostrar datos consola
+            System.out.println("Seguir agregando si/no");
+            continuar = s.next();
+
+        } else {
+            continuar = JOptionPane.showInputDialog("Seguir agregando si/no");
+        }
+        return continuar;
     }
 
 }
