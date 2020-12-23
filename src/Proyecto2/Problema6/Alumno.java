@@ -43,21 +43,6 @@ public class Alumno {
         this.nombre = "Felipe";
     }
 
-    public void mostrardatos() {
-        System.out.println("Datos del alumno ingresado:" + "\n" + nombre + " " + apellido + " " + carne);
-    }
-
-    public void mostrardatosFamiliar() {
-        System.out.println("Datos del padre ingresado:" + "\n" + "Nombre: " + familia.getNombre() + ",apellido:  " + familia.getApellido() + ", cedula:  " + familia.getCedula() + ""
-                + ", telefono: " + familia.getTelefono() + "\n"
-                + "Datos de la madre ingresada:" + "\n" + "Nombre: " + madre.getNombre() + ",apellido:  " + madre.getApellido() + ", cedula:  " + madre.getCedula() + ""
-                + ", telefono: " + madre.getTelefono());
-    }
-
-    public void mostrardatosMadre() {
-        System.out.println("Datos de la madre ingresada:" + "\n" + "Nombre: " + madre.getNombre() + ",apellido:  " + madre.getApellido() + ", cedula:  " + madre.getCedula() + ""
-                + ", telefono: " + madre.getTelefono());
-    }
 
     //metodos gets y sets
     public String getNombre() {
