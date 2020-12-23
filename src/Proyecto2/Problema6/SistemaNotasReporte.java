@@ -60,7 +60,8 @@ public class SistemaNotasReporte {
 
     }
 
-    public void generarReporteTodosExamenesOrdenadosPor(String propiedad) {
+    public String generarReporteTodosExamenesOrdenadosPor(String propiedad) {
 
+        return propiedad;
     }
 }
